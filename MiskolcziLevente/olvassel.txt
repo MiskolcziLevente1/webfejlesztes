@@ -1,5 +1,3 @@
-# webfejlesztes
-A webfejlesztés tárgy beadandója.
 Miskolczi Levente
 
 Url:

@@ -1,0 +1,482 @@
+:root{
+    color-scheme: light dark;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: light-dark(rgb(255, 255, 255), rgb(0, 0, 0));
+    color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+    font-family: 'Newsreader', serif;
+    line-height: 25px;
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    height: fit-content; 
+}
+
+/*header formazasa*/
+
+header {
+    padding: 2px;
+    margin: 0px;
+
+    background-color: light-dark(rgb(192, 186, 186), rgb(108, 106, 106));
+    
+    text-align: center;
+    font-size: 25px;
+    order: 1;
+    
+}
+/*hater szin valtoztatto formazasa*/
+.ToggleButton{
+   float: right;
+   margin: 0px;
+}
+.button{
+    width: 30px;
+    height: 30px;
+}
+
+
+/*nav formazasa*/
+nav{
+    flex: 1 1 98%;
+    padding: 8px;
+    margin: 1%;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li a{
+    display: block;
+    color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    background-color: light-dark(rgb(0, 251, 255), rgb(34, 216, 219));
+
+    text-align: center;
+    text-decoration: none; 
+    font-size: 20px;
+}
+a.current{
+    background-color: light-dark(rgb(0, 184, 187), rgb(24, 149, 151));
+    font-weight: bold;
+}
+
+nav a:hover{
+    font-size: 22px;
+    background-color: light-dark(rgba(0, 251, 255, 0.5), rgba(34, 216, 219, 0.5));
+
+}
+/*section formazasa*/
+.egybe{
+    flex: 1 1 98%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*article formazasa*/
+article{
+    flex: 1 1 98%;
+    padding: 15px;
+    margin: 1%;
+    border-radius: 15px;
+    color: light-dark(black,white);
+}
+.jelentkezes_szoveg{
+    background-color: light-dark(rgb(248, 138, 248), rgb(168, 63, 168));
+
+    text-align: center;
+
+}
+.jelentkezes_szoveg p{
+    font-size: 18px;
+}
+.jelentkezes_szoveg h1{
+    font-size: 25px;
+}
+
+
+
+.index_szoveg{
+    background-color: light-dark(rgb(186, 237, 110),rgb(120, 172, 42));
+}
+
+.index_szoveg p{
+    font-size: 18px;
+}
+.index_szoveg h1{
+    font-size: 25px;
+}
+
+
+
+.taplalkozas_szoveg{
+    background-color: light-dark(rgb(145, 210, 210),rgb(58, 112, 112));
+}
+.taplalkozas_szoveg p{
+    font-size: 18px;
+}
+.taplalkozas_szoveg h1{
+    font-size: 25px;
+}
+
+.fitness_szoveg{
+    background-color: light-dark(rgb(255, 253, 149),rgb(158, 156, 66));
+}
+.fitness_szoveg p{
+    font-size: 18px;
+}
+.fitness_szoveg h1{
+    font-size: 25px;
+}
+
+aside{
+    flex: 1 1 98%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/*footer formazasa*/
+footer{
+    margin: 0px;
+    margin-top: 1%;
+    padding: 15px;
+    background-color: light-dark(rgb(149, 146, 146), rgb(64, 63, 63));
+    color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));
+    text-align: center;
+}
+.footer_link {
+    text-decoration: none;
+    color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+
+/*kepek formazasa*/
+
+figure{
+    margin: 0%;
+    padding: 0%;
+}
+img.kep{
+    width: 98%;
+    height: auto;
+}
+
+
+
+/*quiz formazasa*/
+.quiz{
+    background-color: light-dark(rgb(135, 250, 171),rgb(84, 160, 108));
+}
+
+
+.valasz_block{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    vertical-align: center;
+
+}
+.kerdes{
+    background-color: light-dark(rgb(0, 255, 81),rgb(1, 122, 39));
+    text-align: center;
+    flex:1 1 98%;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: center;
+}
+
+.valasz1{
+    background-color: light-dark(rgb(173, 255, 141),rgb(129, 211, 97));
+    flex: 1 1 48%;
+    margin: 1%;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+
+    
+}
+.valasz2{
+    background-color: light-dark(rgb(173, 255, 141),rgb(129, 211, 97));
+    flex: 1 1 48%;
+    margin: 1%;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.valasz3{
+    background-color: light-dark( rgb(173, 255, 141),rgb(129, 211, 97));
+    flex: 1 1 48%;
+    margin: 1%;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.valasz4{
+    background-color: light-dark( rgb(173, 255, 141),rgb(129, 211, 97));
+    flex: 1 1 48%;
+    margin: 1%;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.tovabb_formaz{
+    flex: 1 1 48%;
+    margin: 1%;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: light-dark(rgb(0, 255, 81),rgb(1, 122, 39));
+    text-align: center;
+    font-size: 20px;
+}
+.tovabb_formaz:hover{
+    background-color: light-dark(rgb(3, 203, 66),rgb(1, 97, 32));
+}
+.pontok{
+    flex: 1 1 48%;
+    margin: 1%;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: light-dark(rgb(0, 255, 81),rgb(1, 122, 39));
+    text-align: center;
+    font-size: 20px;
+
+}
+.lahatatlan{
+    display: none;
+}
+
+
+
+
+
+
+/* urlap formazasa*/
+
+
+table {
+    width: 100%;  
+    margin: 1%;
+    border: 2px solid rgb(0, 123, 255);
+    padding: 20px;
+    border-collapse: collapse; 
+    background-color:  light-dark(rgb(31, 255, 255),rgb(47, 169, 169))
+}
+
+caption {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(0, 123, 255); 
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+td {
+    width: 50%; 
+    padding: 10px; 
+    vertical-align: top; 
+    border: 1px solid rgb(200, 200, 200); 
+}
+
+input, select, textarea { 
+    padding: 8px;
+    border: 1px solid rgb(192, 192, 192); 
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255); 
+    color: rgb(51, 51, 51);
+}
+select {
+    width: 60%; 
+    padding: 10px; 
+    background-color: rgba(249, 249, 249, 1);;
+    font-size: 15px;
+    outline: none;
+    scrollbar-width: none;
+}
+
+option {
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 123, 255, 1);
+}
+option:hover {
+    background-color: rgba(224, 224, 224, 0.8);
+}
+option:checked {
+    background-color: rgba(111, 103, 251, 0.8);
+}
+
+.kuldes, .torles {
+    width: auto; 
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(0, 123, 255); 
+    color: rgb(255, 255, 255); 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kuldes:hover, .torles:hover {
+    background-color: rgb(0, 72, 148); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tablet*/
+@media only screen and (min-width: 600px) {
+    nav{
+        flex: 1 1 48%;
+        padding: 15px;
+        margin: 1%;
+    }
+    img.kep{
+        height: auto;
+        padding-top: 30px;
+    
+    }
+    .egybe{
+        flex: 1 1 48%;
+        padding: 0px;
+        margin: 0%;
+    }
+    article{
+        flex: 1 1 48%;
+        padding: 15px;
+        margin: 1%;
+        }
+    aside{
+        flex: 1 1 48%;
+    }
+    .urlap{
+        flex: 1 1 98%;
+    }
+}
+
+/*Szamitogep*/
+@media only screen and (min-width: 768px) {
+    nav{
+        flex: 1 1 31%;
+        padding: 15px;
+        margin: 1%;
+    }
+    img.kep{
+      
+        height: auto;
+        padding-top: 30px;
+    
+    
+    }
+    .egybe{
+        flex: 1 1 31%;
+        padding: 0px;
+        margin: 0%;
+    }
+    aside{
+        flex: 1 1 31%;
+    }
+    article{
+    flex: 1 1 31%;
+    padding: 15px;
+    margin: 1%;
+    }
+    .urlap{
+        flex: 1 1 48%;
+    }
+    .order1{
+        order: -1;
+    }
+    .order2{
+        order: -2;
+    }
+    .ordernav{
+        order: -3;
+    }
+}
+
+
+
+
+
+/* jquery formazasa*/
+.slider{
+width: 90%;
+min-width: 400px;
+margin: 1% auto;
+}
+.slick-slide{
+    margin: 0px 10px;
+}
+    
+.slick-slide img{
+    width: 100%;
+}
+    
+.slick-prev:before, .slick-next:before {
+    color: rgb(0, 0, 0);
+}
+.slick-slide{
+transition: all ease-in-out .5s;
+opacity: .3;
+}
+.slick-active{
+    opacity: .5; 
+}
+.slick-current{
+     opacity: 1; 
+}
+
+/*validalas formazasa*/
+.error {
+color: rgb(255, 0,0); 
+background-color: rgb(255,255,255);
+font-style: italic;
+border-radius: 10px;
+padding:5px;
+}
+.error {
+    display: block;
+    color: red;
+    margin-top: 5px;
+
+}

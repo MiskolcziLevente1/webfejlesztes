@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+
+
+    <meta  name="author" content="Miskolczi Levente">
+    <meta charset="UTF-8">
+    <meta name="description" content="Jelentekezés, programokra bemutatása, jelentkezés">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="Kepek/favicon.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <title>Jelentekezés</title>
+</head>
+<body>
+    <header id="cim">
+        <span class="ToggleButton"><input class="button" type="image" src="Kepek/toggle_off.png" alt="Kép leírása" id="gomb"></span>
+        <h1 class="focim">Fitness </h1>  
+    </header>
+<div class="container">
+
+    <div class="egybe">
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="fitneszalapok.html">Fitnesz alapok</a></li>
+                <li><a href="taplalkozas.html">Egszészséges táplálkozás</a></li>
+                <li><a class="current" href="#">Jelentkezés</a></li>
+            </ul>
+        </nav>
+        <article class="jelentkezes_szoveg">
+            <h1>Tájékoztatás</h1>
+            <p>
+                Üdvözlünk a fitness programjaink világában! A célunk, hogy minden résztvevő számára egy teljes értékű edzésélményt biztosítsunk. A programok mindhárom szinthez (kezdő, középhaladó, haladó) kínálnak megfelelő edzéstervet, így mindenki megtalálhatja a számára ideális megoldást. Külön figyelmet fordítunk a biztonságra, ezért mindig ügyelj a gyakorlatok helyes végrehajtására, és konzultálj szakértőkkel, ha kétségeid vannak.
+            </p>
+            <p>
+
+            </p>      
+        </article>
+    </div>
+
+    <div class="egybe">
+        <article class="jelentkezes_szoveg ">
+            <h1>1. Program </h1>
+        </article>
+        <article>
+            <img class="kep" src="Kepek/konditerem.jpg" alt="Kép a konditerem gép részlegéről">
+        </article>
+        
+        <article class="jelentkezes_szoveg ">
+            <h1>Teljes test edzés és egészséges étkezés</h1>
+            <p>
+                A napi edzés egy teljes testet átmozgató erősítő edzés, amely minden fontos izomcsoportot megdolgoztat. Az edzés a következő gyakorlatokat tartalmazza: guggolás, fekvenyomás, húzódzkodás, vállból nyomás, bicepsz és tricepsz gyakorlatok. Az edzés után egy egészséges, fehérjében gazdag étkezést ajánlunk, mint például grillezett csirke salátával és quinoa körettel. Ez az étkezés segít a regenerálódásban és az izomnövekedésben.
+            </p>
+        </article>
+    </div>
+
+    <div class="egybe">
+        <article class="jelentkezes_szoveg " >
+            <h1>2. Program </h1>
+        </article>
+        <article>
+            <img class="kep" src="Kepek/cardio.jpeg" alt="Kép a konditerem kardió részlegéről">
+        </article>
+        <article class="jelentkezes_szoveg " >
+            <h1> Kardió és tápláló étkezés a zsírégetésért</h1>
+            <p>
+                Ez a program azok számára ideális, akik szeretnék csökkenteni a testzsírt és javítani az állóképességüket. A napi edzés egy 40 perces közepes intenzitású kardió edzés, például futás vagy biciklizés. Az edzés után egy frissítő smoothie-t kínálunk, amely friss gyümölcsökkel, zöldségekkel és növényi alapú fehérjével készült. Ez az étkezés segít pótolni a vitaminokat, ásványi anyagokat és a szükséges tápanyagokat.
+            </p>
+        </article>
+    </div>   
+
+    <div class="egybe">
+        <article class="jelentkezes_szoveg ">
+            <h1>3. Program</h1>
+        </article>
+        <article>
+            <img class="kep" src="Kepek/sulyreszleg.jpeg" alt="Kép a konditerem kézi súlzyó részlegéről ">
+        </article>
+        <article class="jelentkezes_szoveg ">
+            <h1>Alap erőlét és étkezési tippek kezdőknek</h1>
+            <p>
+                Ez a program azok számára ideális, akik most kezdik el az edzést, és szeretnék megerősíteni az alapokat. A napi edzés egy könnyed, de hatékony edzés, amely fókuszál a legfontosabb alap gyakorlatokra: guggolás, fekvenyomás, vállból nyomás, bicepsz és tricepsz edzés. Edzés után egy könnyű, de tápláló étkezést ajánlunk, mint például egy avokádós, tojásos teljes kiőrlésű szendvics, amely segít az energia gyors feltöltésében.
+            </p>
+        </article>
+    </div>
+
+
+
+
+
+        <article class="urlap">
+            <form  action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" method="post" id="myform" novalidate>
+                
+                <table>
+                    <caption class=" formaz"> Jelentekezés</caption>
+                    <tr>
+                        <td>                 
+                            <label>
+                                <p>
+                                    Név: <input type="text" name="nev"  size="25" placeholder="Vezetéknév Keresztnév">
+                                </p>
+                            </label>
+                            <label>
+                                <p>
+                                    Email: 
+                                    <input type="email" name="email"  size="25" placeholder="pelda@gmail.com"> 
+                                </p>
+                            </label>
+                            <label>
+                                <p>
+                                    Hírlevelre való feliratkozás <input type="checkbox" name="hir" id="hirlev" value="ON" >
+                                </p>
+                            </label>
+                            <label>
+                                <p> 
+                                    Telefonszám: <input type="tel" name="telefon" size="25" placeholder="06 30 123 4567">
+                                </p>
+                            </label>
+                            <label>
+                                <p> 
+                                Kérjük irja le, ha bármilyen allergiája van: <br>
+                                <Textarea name="allergia" rows="4" cols="20"></Textarea>
+                                </p>
+                            </label>
+                        <td>
+                            <p> 
+                                Kiválsztott program: <br>
+                                
+                                
+                                    <label> <p>1. Program <input type="radio" name="program" id="1" value="1"></p></label> 
+                                    <label> <p>2. Program <input type="radio" name="program" id="2" value="2"></p></label> 
+                                    <label><p>3. Program <input type="radio" name="program" id="3" value="3"></p></label>
+                                
+                            </p>
+                            
+                                <p>
+                                    Válaszak ki az időpontot
+                                    <select size="5" name="ido" >
+                                        <option value="hetfo">Hetfő</option>
+                                        <option value="ked">Kedd</option>
+                                        <option value="sze">Szerda</option>
+                                        <option value="csut">Csütörtök</option>
+                                        <option value="pentek" >Péntek</option> 
+                                    </select>
+    
+                                </p>
+                            </label>
+                            
+                            <label>
+                                <p>
+                                    Alkamak száma:
+                                    <input type="number" name="alkalom" min="1" max="10" step="1">
+                                </p>
+                            </label>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Küldés" class="kuldes">
+                            <input type="reset" value="Törlés" class="torles">
+                        </td>
+                    </tr>
+                </table>
+            
+            
+            </form>
+        </article>
+        
+   
+</div>
+
+
+<footer>
+    <p><a class="footer_link" href="#cim">Vissza az oldal tetejére</a> </p>
+    <hr>
+    <p><a class="footer_link" href="olvassel.txt">Olvass el!</a></p>
+
+</footer>
+<script src="Java/index.js"></script>
+<script src="Java/jquery-3.7.1.min.js"></script>
+<script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("#myform").validate({
+       rules: {
+           nev: { 
+               required: true
+           },
+           email: {
+               required: true,
+               email: true
+           },
+           telefon: {
+               required: true,
+           },
+           program: {
+               required: true
+           },
+           ido: {
+               required: true
+           },
+           alkalom: {
+               required: true,
+               number: true
+           }
+       },
+       messages: {
+           nev: {
+               required: "Írd be a teljes neved",
+           },
+           email: {
+               required: "Ad meg az email címed",
+               email: "Legyen benne @",
+           },
+           telefon: {
+               required: "Ad meg a telefon számod",
+           },
+           program: {
+               required: "Válassz programot",
+           },
+           ido: {
+               required: "Válaszd ki az időpontot",
+           },
+           alkalom: {
+               required: "Válaszd ki az alkalmat",
+               number: "Csak számokat adj meg",
+           }
+       },
+       errorPlacement: function(error, element) {
+           error.insertAfter(element); 
+           error.wrap("<div class='error-container'></div>");
+       }
+   });
+});
+</script>
+
+
+
+</body>
+</html>
