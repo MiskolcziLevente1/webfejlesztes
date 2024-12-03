@@ -2,7 +2,7 @@
 A webfejlesztés tárgy beadandója.
 Miskolczi Levente
 
-Url:
+Url: https://miskolczilevente1.github.io/webfejlesztes/
 
 Leírás: Az oldal a fitneszhez tartozó témakat dologza fel. 
 Az edzésmódokat, egézséges táplálkozást, illetve 3 edzés programot is kinál.
